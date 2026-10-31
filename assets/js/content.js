@@ -185,7 +185,7 @@ window.PAGE_CONTENT = {
           },
 
           {
-            text: 'Mack doesn´t need to tell Will that he felt the same, still kind of does. They both know anyway. Both feel the fear lodged deep inside their bones.',
+            text: 'Mack doesn’t need to tell Will that he felt the same, still kind of does. They both know anyway. Both feel the fear lodged deep inside their bones.',
             style: 'normal'
           },
 
@@ -199,7 +199,7 @@ window.PAGE_CONTENT = {
             style: 'normal'
           },
           {
-            text: 'They sit side to side. Their shoulders touching. Neither making a particularly convincing attempt at pretending it’s accidental, why would they pretend anyway, it´s just them.',
+            text: 'They sit side to side. Their shoulders touching. Neither making a particularly convincing attempt at pretending it’s accidental, why would they pretend anyway, it’s just them.',
             style: 'normal'
           },
 
@@ -224,7 +224,7 @@ window.PAGE_CONTENT = {
           },
 
           {
-            text: 'And they know that whenever someone tries to seperate them again—and they kind of know that it will happen again at some point, that´s just how these things work—but when it will, they are gonna fight tooth and nails to stay together, that much they can promise.',
+            text: 'And they know that whenever someone tries to seperate them again—and they kind of know that it will happen again at some point, that’s just how these things work—but when it will, they are gonna fight tooth and nails to stay together, that much they can promise.',
             style: 'highlight'
           }
         ],
@@ -255,8 +255,8 @@ window.PAGE_CONTENT = {
             author: 'ExtraSteps',
 
             summary: [
-              'Will has eyes, is the thing. He doesn´t know how no one else in fucking Switzerland can see how the smiles Mack puts on for the camera never reach his eyes, or the way the bags under his eyes keep deepening with every passing day.',
-              'When Mack returns to Vancouver, he´s there to do whatever he can to build him back up.'
+              'Will has eyes, is the thing. He doesn’t know how no one else in fucking Switzerland can see how the smiles Mack puts on for the camera never reach his eyes, or the way the bags under his eyes keep deepening with every passing day.',
+              'When Mack returns to Vancouver, he’s there to do whatever he can to build him back up.'
             ],
 
             rating: 'T',
@@ -279,8 +279,8 @@ window.PAGE_CONTENT = {
             author: 'hockeyobsessor',
 
             summary: [
-              '[Will just shakes his head, grinning. "You´re a funny guy, Celly," he says and watches in some amusement, as Mack´s face turns a splotchy red.',
-              '"Oh," Mack stammers, puffing out his chest, "Well, yeah. Have to be to put up with you, eh?" It´s barely even funny; more posture than joke, but Will bursts out laughing anyway. Mack looks ridiculously proud of himself, all smug little smirk and sparkling eyes. If he wasn´t already, Will is horribly, hopelessly endeared.]',
+              '[Will just shakes his head, grinning. "You’re a funny guy, Celly," he says and watches in some amusement, as Mack’s face turns a splotchy red.',
+              '"Oh," Mack stammers, puffing out his chest, "Well, yeah. Have to be to put up with you, eh?" It’s barely even funny; more posture than joke, but Will bursts out laughing anyway. Mack looks ridiculously proud of himself, all smug little smirk and sparkling eyes. If he wasn’t already, Will is horribly, hopelessly endeared.]',
               'OR It takes all of one second for Will to know he likes Mack. It takes the rest of the season for them both to realize just how much.'
             ],
 
@@ -292,7 +292,7 @@ window.PAGE_CONTENT = {
             ],
 
              tags: [
-              'Hurt/Comfort', 'Pre-Relationship', 'Fluff', 'Flirting', 'Forehead Kisses', 'Soft Hockey Boys', 'Dumb Hockey Boys', 'Touch-Starved Macklin Celebrini', 'Angst and Hurt/Comfort', 'will being the world´s biggest simp', 'feat. mack´s complete lack of emotional regulation', 'Boys In Love'
+              'Hurt/Comfort', 'Pre-Relationship', 'Fluff', 'Flirting', 'Forehead Kisses', 'Soft Hockey Boys', 'Dumb Hockey Boys', 'Touch-Starved Macklin Celebrini', 'Angst and Hurt/Comfort', 'will being the world’s biggest simp', 'feat. mack’s complete lack of emotional regulation', 'Boys In Love'
             ],
             epub: 'hockeyobsessor_Stars_66239161.epub'
           },
@@ -304,7 +304,7 @@ window.PAGE_CONTENT = {
             summary: [
               '“In hindsight, it was inevitable that he would end up coming inside Mack.”',
               'or',
-              'It´s totally chill and platonic to knot your best friend, because, like, science says, it´s good for them, bro.'
+              'It’s totally chill and platonic to knot your best friend, because, like, science says, it’s good for them, bro.'
             ],
 
             rating: 'E',
