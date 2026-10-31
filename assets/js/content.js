@@ -77,6 +77,35 @@ window.PAGE_CONTENT = {
       },
 
 
+      {
+        type: 'excerpt',
+        eyebrow: '03 / From the WIP drawer',
+        title: 'Sneak Peak',
+
+        bookTitle: 'Olympic Time Loop Fic (Working Title)',
+        author: 'BluishFrog',
+        source: 'Scene 5',
+
+        paragraphs: [
+
+          'Will thinks that the key to getting Mack out of the time loop is figuring out how to break the time loop.',
+          'Mack has definitely already made it to that conclusion on his own, but he lets Will go all out about it. Lets him pace back and forth while talking himself into circles. Lets him interrupt himself halfway through a sentence because he just thought of something better. Lets him get that look in his eyes like every impossible problem is just a puzzle that hasn’t been solved yet.',
+          'Will even gets a new notebook to write all their reasons and attempts down in, dates every page, comes up with little headings and categories that feel almost aggressively optimistic. Failed theories. Things to try. Things that almost worked (Will insists that they did, but Mack knows there is no indicator for it). Questions they still can’t answer, which is basically all of them.',
+          'Neither of them brings up that at the end of the loop Will will forget again, the notebook will be gone, and all the work will have been for nothing. Will writes in it anyway. Mack watches him over FaceTime, filling pages with neat handwriting that won’t exist in a few days.',
+          '(Well, Mack brings it up seven loops later because he’s angry and he’s hurt and he’s lashing out.',
+          'It’s not that he wants to hurt Will, he never does, but some ugly little voice at the back of his head gets louder the longer he’s stuck in what should have been the best experience of his life but instead feels like hell at this point. That ugly little voice tells him to spit words he doesn’t mean—or maybe means so much that he can’t keep them in anymore—just so he doesn’t have to be the only one who’s hurting.',
+          'He asks what the point of the stupid notebook even is. Asks why Will keeps pretending that he can help as if he doesn’t already know that every page is nothing but an act of misguided faith. “Maybe that’s how you earned your little necklace, cause you’re so good at that,” he sneers.',
+          'When Will hangs up and doesn’t call him back for two days, Mack tells himself that it doesn’t matter. Only one of them will remember anyway.)',
+          'Mack makes Will send him a picture of the notebook cover.',
+          'He’s pretty sure this won’t be the only time Will buys a notebook for this exact purpose, and he wonders if it’ll always be the same one. Wonders if, somewhere buried underneath everything Will forgets, there’ll still be some instinct that reaches for the same notebook. The same color. The same brand. The same weight in his hands.',
+          '(It isn’t, but Mack learns that Will always picks the same store to buy it at. So Mack starts asking why Will chooses each particular notebook.',
+          'Will never just shrugs. He always has a reason.',
+          'The paper has fewer lines, which makes it easier to sketch diagrams. Or the cover feels sturdier, so it’ll survive being shoved into a bag. Or the pages lie flatter. Or it’s the perfect size because it fits in his jacket pocket without being annoying. Or the color is less distracting. Or the color is more distracting, which is apparently better that time around.',
+          'Every explanation is delivered with complete confidence, as though there could never have been any other choice.',
+          'The situation still fucking sucks but, on the rare occasions he isn’t crushed by how powerless he feels, how utterly helpless, Mack delights in knowing that Will is still full of shit.)'
+        ]
+      },
+
 
 
 

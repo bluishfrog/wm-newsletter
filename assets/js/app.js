@@ -348,6 +348,43 @@
         }
 
 
+        else if (s.type === 'excerpt') {
+          content = `
+            <div class="excerpt-card">
+
+              ${s.bookTitle || s.author || s.source ? `
+                <div class="excerpt-source">
+
+                  ${s.bookTitle ? `
+                    <span class="excerpt-book">
+                      ${escapeHTML(s.bookTitle)}
+                    </span>
+                  ` : ''}
+
+                  ${s.author ? `
+                    <span class="excerpt-author">
+                      by ${escapeHTML(s.author)}
+                    </span>
+                  ` : ''}
+
+                  ${s.source ? `
+                    <span class="excerpt-location">
+                      ${escapeHTML(s.source)}
+                    </span>
+                  ` : ''}
+
+                </div>
+              ` : ''}
+
+              <div class="excerpt-text">
+                ${paragraphs(s.paragraphs)}
+              </div>
+
+            </div>
+          `;
+        }
+
+
 
 
         return `
