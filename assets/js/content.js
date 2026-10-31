@@ -55,7 +55,7 @@ window.PAGE_CONTENT = {
 
           'Real life does not come with tags. There is no reassuring little label attached to our more difficult days, no kindly author promising that the anguish will be temporary, that the wounds will heal, that everything will eventually find its way back to something resembling happiness.',
 
-          'Fiction, however, in combination with a wonderfully structured tagging system as ao3 has one, can offer us precisely that.',
+          'Fiction, however, in combination with a wonderfully structured tagging system as AO3 has one, can offer us precisely that.',
 
           'We may willingly follow our favourite characters into the darkest corners of their stories. We may watch them break, grieve, despair, and endure circumstances that would have us calling for professional intervention were they to occur outside the confines of a fictional universe. We may even find ourselves weeping over them at two in the morning, fully aware that we have work to attend to in a matter of hours. (Okay, it was four in the morning.)',
 
@@ -367,7 +367,25 @@ window.PAGE_CONTENT = {
           'Every explanation is delivered with complete confidence, as though there could never have been any other choice.',
           'The situation still fucking sucks but, on the rare occasions he isn’t crushed by how powerless he feels, how utterly helpless, Mack delights in knowing that Will is still full of shit.)'
         ]
-      }
+      },
+
+      {
+        type: 'text',
+        eyebrow: '07 / Closing Notes',
+        title: 'Until the Hurt Gives Way',
+        paragraphs: [
+          'And so we arrive at the final pages of our little exploration of suffering, solace, and the rather peculiar human inclination to seek out both in equal measure.',
+
+          'As we await the return of our beloved AO3, I find there is something rather fitting about ending our first issue here: suspended somewhere between longing and anticipation, between what we have lost and what we hope to find again. After all, we have spent an entire issue discussing the virtues of Hurt / Comfort. It would be terribly inconsiderate of the universe not to provide us with the comfort part eventually.',
+
+          'Until then, my lovely friends, may our angst be fictional, our comfort plentiful, and our favourite characters held just a little more gently than their authors originally intended.',
+
+          '{{With love, longing, and a thoroughly unreasonable number of open browser tabs,}}',
+
+          '[[signature]]— Blu[[/signature]]'
+        ]
+      },
+
 
     ]
   },

@@ -59,6 +59,11 @@
       '<span class="text-accent">$1</span>'
     );
 
+    text = text.replace(
+      /\[\[signature\]\](.*?)\[\[\/signature\]\]/g,
+      '<span class="handwritten-signature">$1</span>'
+    );
+
     return text;
   };
 
