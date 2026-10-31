@@ -482,6 +482,81 @@
           `;
         }
 
+        else if (s.type === 'notes') {
+          const allowedDoodles = [
+            'heart', 'star', 'sparkle', 'arrow',
+            'flower', 'wave', 'question', 'spiral'
+          ];
+
+          const doodles = (s.doodles || [])
+            .filter(d => allowedDoodles.includes(d));
+
+          content = `
+            <div class="notes-paper">
+
+              ${s.label ? `
+                <div class="notes-label">
+                  ${escapeHTML(s.label)}
+                </div>
+              ` : ''}
+
+              <div class="notes-content">
+                ${(s.notes || []).map(note => {
+                  const text = typeof note === 'string'
+                    ? note
+                    : note.text || '';
+
+                  const style = typeof note === 'string'
+                    ? 'normal'
+                    : note.style || 'normal';
+
+                  const allowedStyles = [
+                    'normal', 'emphasis', 'small',
+                    'crossed', 'highlight'
+                  ];
+
+                  const safeStyle = allowedStyles.includes(style)
+                    ? style
+                    : 'normal';
+
+                  return `
+                    <p class="notes-entry notes-${safeStyle}">
+                      ${formatText(text)}
+                    </p>
+                  `;
+                }).join('')}
+              </div>
+
+              ${doodles.length ? `
+                <div class="notes-doodles" aria-hidden="true">
+                  ${doodles.map(d => `
+                    <span class="notes-doodle notes-doodle-${d}">
+                      ${({
+                        heart: '♡',
+                        star: '☆',
+                        sparkle: '✧',
+                        arrow: '↝',
+                        flower: '✿',
+                        wave: '〰',
+                        question: '???',
+                        spiral: '◎'
+                      })[d]}
+                    </span>
+                  `).join('')}
+                </div>
+              ` : ''}
+
+              ${s.signature ? `
+                <div class="notes-signature">
+                  ${escapeHTML(s.signature)}
+                </div>
+              ` : ''}
+
+            </div>
+          `;
+        }
+
+
 
 
         return `
@@ -507,7 +582,11 @@
 
           <h1>${escapeHTML(data.title)}</h1>
 
-          <p>${formatText(data.introduction)}</p>
+          ${paragraphs(
+            Array.isArray(data.introduction)
+              ? data.introduction
+              : [data.introduction]
+          )}
 
         </section>
 

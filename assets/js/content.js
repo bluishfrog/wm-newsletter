@@ -8,7 +8,9 @@ window.PAGE_CONTENT = {
 
     title: 'The Art of Aching',
 
-    introduction: 'Our beloved AO3 has vanished not only from the chronicles of our browsers, but has left in its wake a gaping void in our hearts, our evening rituals, and the countless hours once spent lost in fictional worlds aboard buses and trains. Yet, as keenly as we feel its absence, we await its return with equal measures of longing and hope. And so, in the spirit of our collective suffering and the solace we so desperately seek, what theme could be more fitting for the inaugural issue of this newsletter than {{Hurt / Comfort}}?',
+    introduction: [
+      'Our beloved AO3 has vanished not only from the chronicles of our browsers, but has left in its wake a gaping void in our hearts, our evening rituals, and the countless hours once spent lost in fictional worlds aboard buses and trains. Yet, as keenly as we feel its absence, we await its return with equal measures of longing and hope.',
+      'And so, in the spirit of our collective suffering and the solace we so desperately seek, what theme could be more fitting for the inaugural issue of this newsletter than {{Hurt / Comfort}}? (And I am not just saying that because I know my audience. But I also __do__ know my audience.)'],
 
     sections: [
 
@@ -76,8 +78,169 @@ window.PAGE_CONTENT = {
         url: 'https://open.spotify.com/track/77MdvMx9L4ZQuLhhn3o21h'
       },
 
-      
-      
+
+
+
+      {
+        type: 'notes',
+        eyebrow: '03 / Scribbles in the Margins',
+        title: 'The Things That Follow Victory',
+
+        label: 'WILLMACK H/C HEADCANONS',
+
+        notes: [
+          {
+            text: 'Post-game. After the line reunion. Three goals in three minutes. Two of them Will’s. Everything is fine. Everything is wonderful. Everything is—',
+            style: 'normal'
+          },
+
+          {
+            text: 'The thing about adrenaline is that it is terribly good at keeping inconvenient emotions at bay. The thing about adrenaline is that it eventually wears off.',
+            style: 'normal'
+          },
+
+          {
+            text: 'FIRST: being separated. Different lines. Different shifts. That awful, unfamiliar feeling of looking for someone who is no longer supposed to be there.',
+            style: 'normal'
+          },
+
+          {
+            text: 'Mack looking up on instinct after a play. Will not being where he expects him. Neither of them quite knowing what to do with that.',
+            style: 'normal'
+          },
+
+          {
+            text: 'And then the reunion. Third period. Back together. Relief, right?',
+            style: 'normal'
+          },
+
+          {
+            text: 'WRONG. Well. Not wrong. Just considerably more complicated.',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'Because now they have to prove something. Because if they play badly together, if nothing changes, if the scoreboard stays exactly where it is—then what was the point of putting them back together?',
+            style: 'normal'
+          },
+
+          {
+            text: 'What if they are better apart?',
+            style: 'normal'
+          },
+
+          {
+            text: 'Worse: what if everyone else thinks so too?',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'And they don’t talk about it. They don’t have the time. There is a game to play. There are shifts to take. There is a puck to chase and a bench full of people who cannot possibly be expected to accommodate an existential crisis in the middle of the third period.',
+            style: 'normal'
+          },
+
+          {
+            text: 'So they play. And they score. And score again. Three goals in three minutes. Will gets two. Mack is there. They are together. They are GOOD together.',
+            style: 'highlight'
+          },
+
+          {
+            text: 'PROOF. They have proof now. Surely that should make everything better.',
+            style: 'crossed'
+          },
+
+          {
+            text: 'Except what happens when you realise just how badly you needed that proof?',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'After the game: smiles, interviews, congratulations, the familiar chaos of a locker room after a win. No time to think. No reason to think. They won.',
+            style: 'normal'
+          },
+
+          {
+            text: 'And then they get home.',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'No more eyes watching their every move. Just the quiet hum of the refrigerator and two boys who have finally run out of things to distract themselves with.',
+            style: 'normal'
+          },
+
+          {
+            text: 'Mack notices Will has gone quiet. Not his usual tired-after-a-game quiet. The other kind.',
+            style: 'normal'
+          },
+
+          {
+            text: 'Maybe Will is sitting on the edge of the couch, still in his hoodie, staring at absolutely nothing. Maybe Mack asks if he’s okay and Will says yeah, because technically they won, so what else is he supposed to say?',
+            style: 'normal'
+          },
+
+          {
+            text: '“I was scared we were gonna screw it up.”',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'Mack doesn´t need to tell Will that he felt the same, still kind of does. They both know anyway. Both feel the fear lodged deep inside their bones.',
+            style: 'normal'
+          },
+
+          {
+            text: '“But we didn’t.”',
+            style: 'normal'
+          },
+
+          {
+            text: '“Yeah. I know.”',
+            style: 'normal'
+          },
+          {
+            text: 'They sit side to side. Their shoulders touching. Neither making a particularly convincing attempt at pretending it’s accidental, why would they pretend anyway, it´s just them.',
+            style: 'normal'
+          },
+
+          {
+            text: 'Consider: Will leaning sideways until his forehead rests against Mack’s shoulder. Mack immediately adjusting so he doesn’t have to hold himself up.',
+            style: 'normal'
+          },
+
+          {
+            text: 'No grand declarations. No miraculous solution to the fact that line combinations can change again tomorrow. Just warmth. Familiarity. Someone staying close.',
+            style: 'normal'
+          },
+
+          {
+            text: 'They cannot promise each other they will never be separated again.',
+            style: 'normal'
+          },
+
+          {
+            text: 'But for now, at least, they get to be together.',
+            style: 'emphasis'
+          },
+
+          {
+            text: 'And they know that whenever someone tries to seperate them again—and they kind of know that it will happen again at some point, that´s just how these things work—but when it will, they are gonna fight tooth and nails to stay together, that much they can promise.',
+            style: 'highlight'
+          }
+        ],
+
+        doodles: [
+          'heart',
+          'star',
+          'arrow',
+          'sparkle'
+        ],
+
+        signature: '— Blu'
+      },
+
+
+
 
 
       {
