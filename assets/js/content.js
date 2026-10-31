@@ -251,55 +251,74 @@ window.PAGE_CONTENT = {
         items: [
 
           {
-            title: 'Olympic Time Loop Fic',
-            author: 'BluishFrog',
+            title: 'rotten work',
+            author: 'ExtraSteps',
 
             summary: [
-              'Your summary goes here.'
+              'Will has eyes, is the thing. He doesn´t know how no one else in fucking Switzerland can see how the smiles Mack puts on for the camera never reach his eyes, or the way the bags under his eyes keep deepening with every passing day.',
+              'When Mack returns to Vancouver, he´s there to do whatever he can to build him back up.'
             ],
 
             rating: 'T',
-            words: '42,000',
+            words: '8.700',
 
             warnings: [
               'No Archive Warnings Apply'
             ],
 
             tags: [
-              'Time Loop',
-              'Hurt / Comfort',
-              'Slow Burn',
-              'Happy Ending'
+              'Sickfic', 'Getting Together', 'First Kiss', '2026 Worlds | IIHF Ice Hockey World Championship', 'Hurt/Comfort'
             ],
 
-            epub: 'olympic-time-loop.epub'
+            epub: 'ExtraSteps_rotten_work_85390501.epub'
           },
 
 
           {
-            title: 'A Different Kind of Home',
-            author: 'ExampleAuthor',
+            title: 'Stars',
+            author: 'hockeyobsessor',
 
             summary: [
-              'Two people, one unexpected reunion, and a conversation that has been waiting years to happen.'
+              '[Will just shakes his head, grinning. "You´re a funny guy, Celly," he says and watches in some amusement, as Mack´s face turns a splotchy red.',
+              '"Oh," Mack stammers, puffing out his chest, "Well, yeah. Have to be to put up with you, eh?" It´s barely even funny; more posture than joke, but Will bursts out laughing anyway. Mack looks ridiculously proud of himself, all smug little smirk and sparkling eyes. If he wasn´t already, Will is horribly, hopelessly endeared.]',
+              'OR It takes all of one second for Will to know he likes Mack. It takes the rest of the season for them both to realize just how much.'
+            ],
+
+            rating: 'T',
+            words: '5.743',
+
+            warnings: [
+              'No Archive Warnings Apply'
+            ],
+
+             tags: [
+              'Hurt/Comfort', 'Pre-Relationship', 'Fluff', 'Flirting', 'Forehead Kisses', 'Soft Hockey Boys', 'Dumb Hockey Boys', 'Touch-Starved Macklin Celebrini', 'Angst and Hurt/Comfort', 'will being the world´s biggest simp', 'feat. mack´s complete lack of emotional regulation', 'Boys In Love'
+            ],
+            epub: 'hockeyobsessor_Stars_66239161.epub'
+          },
+
+          {
+            title: 'Was it Ever Casual?',
+            author: 'orbiter_wsh',
+
+            summary: [
+              '“In hindsight, it was inevitable that he would end up coming inside Mack.”',
+              'or',
+              'It´s totally chill and platonic to knot your best friend, because, like, science says, it´s good for them, bro.'
+            ],
+
+            rating: 'E',
+            words: '8.863',
+
+            warnings: [
+              'Creator Chose Not To Use Archive Warnings'
             ],
 
             tags: [
-              'Reunion',
-              'Angst',
-              'Found Family',
-              'Hurt / Comfort'
+              'Alpha/Beta/Omega Dynamics', 'Omega Verse', 'Omega Macklin Celebrini', 'Alpha Will Smith (Hockey RPF b. 2005)', 'Knotting', 'Scenting', 'Nesting', 'Comfort Knotting', 'platonically knotting your bestmate for like science bro', 'Hurt/Comfort', 'Friends to Lovers', 'Mutual Pining', 'Idiots in Love', 'Astronomical Downbadism', 'Explicit Sexual Content', '2026 Winter Olympics haunting the narrative forever', 'pussy induced sexuality crisis', 'Macklin Celebrini Has a Vagina'
             ],
 
-            words: '18,500',
-            rating: 'E',
-
-            warnings: [
-              'Grief',
-              'Past trauma'
-            ],
-
-            epub: 'a-different-kind-of-home.epub'
+            epub: 'orbiter_wsh_Was_it_Ever_Casual_91962551.epub'
           }
         ]
       },
@@ -310,12 +329,12 @@ window.PAGE_CONTENT = {
         title: 'Pain But in Numbers',
         items: [
           {
-            title: 'First note',
-            text: 'amount of hurt comfort fics.'
+            title: '635 Fics',
+            text: 'Amount of hurt / comfort fics in my epub archive.'
           },
 
           {
-            title: 'Second note',
+            title: '4 Wins',
             text: 'Amount of wins following a loss in this season so far.'
           }
         ]
