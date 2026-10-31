@@ -395,11 +395,11 @@
             <div class="book-list">
               ${(s.items || []).map(book => {
 
-                const epubPath = book.epub
-                  ? root + 'assets/epubs/' + encodeURIComponent(book.epub)
-                  : '';
+            const epubPath = book.epub
+              ? root + 'assets/epubs/' + encodeURIComponent(book.epub)
+              : '';
 
-                return `
+            return `
                   <article class="book-card">
 
                     <div class="book-header">
@@ -424,10 +424,10 @@
                     ${book.summary ? `
                       <div class="book-summary">
                         ${paragraphs(
-                          Array.isArray(book.summary)
-                            ? book.summary
-                            : [book.summary]
-                        )}
+              Array.isArray(book.summary)
+                ? book.summary
+                : [book.summary]
+            )}
                       </div>
                     ` : ''}
 
@@ -436,23 +436,23 @@
                       <div class="book-tags">
 
                         ${(book.warnings || []).map(warning => {
-                          const neutralWarnings = [
-                            'No Archive Warnings Apply',
-                            'Creator Chose Not To Use Archive Warnings'
-                          ];
+              const neutralWarnings = [
+                'No Archive Warnings Apply',
+                'Creator Chose Not To Use Archive Warnings'
+              ];
 
-                          const isNeutral = neutralWarnings.some(
-                            item => item.toLowerCase() === warning.trim().toLowerCase()
-                          );
+              const isNeutral = neutralWarnings.some(
+                item => item.toLowerCase() === warning.trim().toLowerCase()
+              );
 
-                          return `
+              return `
                             <span class="book-tag ${isNeutral
-                              ? 'book-tag-warning-neutral'
-                              : 'book-tag-warning'}">
+                  ? 'book-tag-warning-neutral'
+                  : 'book-tag-warning'}">
                               ${escapeHTML(warning)}
                             </span>
                           `;
-                        }).join('')}
+            }).join('')}
 
                         ${(book.tags || []).map(tag => `
                           <span class="book-tag">
@@ -482,7 +482,38 @@
 
                   </article>
                 `;
-              }).join('')}
+          }).join('')}
+            </div>
+          `;
+        }
+
+        else if (s.type === 'photocollage') {
+          // Images are paths relative to the website root, e.g. assets/images/photo.jpg.
+          // Each photograph may have a handwritten note and a rotation angle.
+          const photos = (s.photos || []).map((photo, index) => {
+            const angle = Math.max(-14, Math.min(14, Number(photo.rotate) || 0));
+            const position = ['left', 'center', 'right'].includes(photo.notePosition)
+              ? photo.notePosition : 'center';
+            const photoPath = String(photo.src || '').replace(/^\/+/, '');
+            const imageSrc = photoPath && !/^(?:javascript:|data:)/i.test(photoPath)
+              ? `${root}${escapeHTML(photoPath)}` : '';
+            return `
+              <figure class="collage-photo" style="--photo-angle: ${angle}deg">
+                <span class="collage-pin" aria-hidden="true"></span>
+                ${imageSrc ? `<img src="${imageSrc}" alt="${escapeHTML(photo.alt || `Photo ${index + 1}`)}" loading="lazy">` : '<div class="collage-photo-placeholder">Add a photo</div>'}
+                ${photo.note ? `<figcaption class="collage-handwriting collage-note-${position}">${escapeHTML(photo.note)}</figcaption>` : ''}
+              </figure>
+            `;
+          }).join('');
+
+          content = `
+            <div class="collage-layout ${s.paragraphs && s.paragraphs.length ? 'collage-has-text' : ''}">
+              <div class="collage-board" aria-label="Pinned photograph collage">${photos}</div>
+              ${(s.paragraphs || []).length ? `
+                <div class="collage-prose section-body">
+                  ${paragraphs(s.paragraphs)}
+                </div>
+              ` : ''}
             </div>
           `;
         }
@@ -507,29 +538,29 @@
 
               <div class="notes-content">
                 ${(s.notes || []).map(note => {
-                  const text = typeof note === 'string'
-                    ? note
-                    : note.text || '';
+            const text = typeof note === 'string'
+              ? note
+              : note.text || '';
 
-                  const style = typeof note === 'string'
-                    ? 'normal'
-                    : note.style || 'normal';
+            const style = typeof note === 'string'
+              ? 'normal'
+              : note.style || 'normal';
 
-                  const allowedStyles = [
-                    'normal', 'emphasis', 'small',
-                    'crossed', 'highlight'
-                  ];
+            const allowedStyles = [
+              'normal', 'emphasis', 'small',
+              'crossed', 'highlight'
+            ];
 
-                  const safeStyle = allowedStyles.includes(style)
-                    ? style
-                    : 'normal';
+            const safeStyle = allowedStyles.includes(style)
+              ? style
+              : 'normal';
 
-                  return `
+            return `
                     <p class="notes-entry notes-${safeStyle}">
                       ${formatText(text)}
                     </p>
                   `;
-                }).join('')}
+          }).join('')}
               </div>
 
               ${doodles.length ? `
@@ -537,15 +568,15 @@
                   ${doodles.map(d => `
                     <span class="notes-doodle notes-doodle-${d}">
                       ${({
-                        heart: '♡',
-                        star: '☆',
-                        sparkle: '✧',
-                        arrow: '↝',
-                        flower: '✿',
-                        wave: '〰',
-                        question: '???',
-                        spiral: '◎'
-                      })[d]}
+              heart: '♡',
+              star: '☆',
+              sparkle: '✧',
+              arrow: '↝',
+              flower: '✿',
+              wave: '〰',
+              question: '???',
+              spiral: '◎'
+            })[d]}
                     </span>
                   `).join('')}
                 </div>
@@ -588,10 +619,10 @@
           <h1>${escapeHTML(data.title)}</h1>
 
           ${paragraphs(
-            Array.isArray(data.introduction)
-              ? data.introduction
-              : [data.introduction]
-          )}
+        Array.isArray(data.introduction)
+          ? data.introduction
+          : [data.introduction]
+      )}
 
         </section>
 

@@ -65,24 +65,18 @@ body {
     margin: 0;
     background-color: var(--paper);
     background-image:
-        radial-gradient(
-            ellipse at 85% 5%,
+        radial-gradient(ellipse at 85% 5%,
             rgba(67, 220, 216, 0.12) 0%,
-            transparent 45%
-        ),
-        radial-gradient(
-            ellipse at 10% 75%,
+            transparent 45%),
+        radial-gradient(ellipse at 10% 75%,
             rgba(35, 182, 177, 0.06) 0%,
-            transparent 50%
-        ),
-        linear-gradient(
-            90deg,
+            transparent 50%),
+        linear-gradient(90deg,
             #FFFFFF 0%,
             #FFFFFF 45%,
             #F7FCFB 65%,
             var(--sea-mist) 80%,
-            var(--deep-water-haze) 100%
-        );
+            var(--deep-water-haze) 100%);
     color: var(--ink);
     font-family: 'DM Sans', sans-serif;
     line-height: 1.65;
@@ -426,13 +420,11 @@ body:not([data-page="home"]) main {
     background-color: #FFFFFF;
 
     /* Very faint horizontal notebook lines */
-    background-image: repeating-linear-gradient(
-        to bottom,
-        transparent 0px,
-        transparent 31px,
-        rgba(89, 189, 183, 0.10) 32px,
-        transparent 33px
-    );
+    background-image: repeating-linear-gradient(to bottom,
+            transparent 0px,
+            transparent 31px,
+            rgba(89, 189, 183, 0.10) 32px,
+            transparent 33px);
 
     border: 1px solid rgba(183, 221, 221, 0.65);
     border-radius: 8px;
@@ -557,17 +549,13 @@ body:not([data-page="home"]) main {
 
     /* Warm, subtly illuminated book cover */
     background:
-        radial-gradient(
-            ellipse at 100% 0%,
+        radial-gradient(ellipse at 100% 0%,
             rgba(89, 189, 183, 0.13),
-            transparent 58%
-        ),
-        linear-gradient(
-            135deg,
+            transparent 58%),
+        linear-gradient(135deg,
             #FFFFFF 0%,
             #FFFEFA 65%,
-            #F6FAF7 100%
-        );
+            #F6FAF7 100%);
 
     /* Thick hardcover spine */
     border: 1px solid #A9CECE;
@@ -628,18 +616,15 @@ body:not([data-page="home"]) main {
          * The elliptical highlights give the rings
          * a curved, three-dimensional appearance.
          */
-        radial-gradient(
-            ellipse 9px 9px at 8px 32px,
+        radial-gradient(ellipse 9px 9px at 8px 32px,
             transparent 45%,
             #607F8D 50%,
             #EAF4F6 64%,
             #FFFFFF 73%,
-            transparent 80%
-        ) left top / 36px 64px repeat-y,
+            transparent 80%) left top / 36px 64px repeat-y,
 
         /* Bright metallic upper highlight */
-        repeating-linear-gradient(
-            to bottom,
+        repeating-linear-gradient(to bottom,
             transparent 0px,
             transparent 27px,
             #FFFFFF 28px,
@@ -648,27 +633,22 @@ body:not([data-page="home"]) main {
             #F8FCFD 33px,
             #607F8D 35px,
             transparent 37px,
-            transparent 64px
-        ) left top / 36px 100% no-repeat,
+            transparent 64px) left top / 36px 100% no-repeat,
 
         /* Small shadows beneath each ring */
-        repeating-linear-gradient(
-            to bottom,
+        repeating-linear-gradient(to bottom,
             transparent 0px,
             transparent 36px,
             rgba(32, 59, 89, 0.20) 38px,
             transparent 41px,
-            transparent 64px
-        ) 8px top / 15px 100% no-repeat,
+            transparent 64px) 8px top / 15px 100% no-repeat,
 
         /* Original turquoise spine */
-        linear-gradient(
-            to right,
+        linear-gradient(to right,
             #2E727D 0%,
             #438F96 35%,
             #65AEB0 65%,
-            #327A84 100%
-        ) 8px top / 15px 100% no-repeat;
+            #327A84 100%) 8px top / 15px 100% no-repeat;
 }
 
 
@@ -709,7 +689,7 @@ body:not([data-page="home"]) main {
 
 /* Make sure all content sits above the cover detailing */
 
-.book-card > * {
+.book-card>* {
     position: relative;
     z-index: 1;
 }
@@ -969,6 +949,239 @@ body:not([data-page="home"]) main {
 
 
 
+
+/* ==========================================================
+   PHOTO COLLAGE — pinned prints + handwritten notes
+   Natural image proportions, responsive layout
+   ========================================================== */
+
+.collage-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 38px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.collage-layout.collage-has-text {
+    grid-template-columns: minmax(0, 1.3fr) minmax(250px, .85fr);
+}
+
+/* ----------------------------------------------------------
+   COLLAGE BOARD
+   ---------------------------------------------------------- */
+
+.collage-board {
+    min-width: 0;
+    padding: 44px 26px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px 18px;
+
+    background: linear-gradient(145deg, #e9f5f2, #f7fbf8);
+    border: 1px solid var(--border-blue);
+    border-radius: 7px;
+}
+
+/* ----------------------------------------------------------
+   PRINTED PHOTOGRAPHS
+   ---------------------------------------------------------- */
+
+.collage-photo {
+    position: relative;
+
+    /* Photos can have different widths */
+    flex: 0 1 auto;
+
+    /* Default width, optionally overridden */
+    width: var(--photo-width, 200px);
+
+    /* Prevent oversized photographs */
+    max-width: min(100%, 300px);
+    min-width: 0;
+
+    /* Height follows the image naturally */
+    height: fit-content;
+    align-self: center;
+
+    margin: 0;
+    padding: 11px 11px 16px;
+
+    background: #fffdf8;
+
+    box-shadow:
+        1px 6px 16px rgba(32, 59, 89, .19),
+        0 1px 3px rgba(32, 59, 89, .10);
+
+    transform: rotate(var(--photo-angle, 0deg));
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.collage-photo:hover {
+    transform: rotate(0deg) translateY(-4px);
+
+    box-shadow:
+        2px 10px 24px rgba(32, 59, 89, .23);
+
+    z-index: 2;
+}
+
+/* ----------------------------------------------------------
+   IMAGES — KEEP ORIGINAL ASPECT RATIO
+   ---------------------------------------------------------- */
+
+.collage-photo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    /* No forced aspect ratio */
+    aspect-ratio: auto;
+
+    /* No cropping */
+    object-fit: contain;
+
+    background: #e2eeec;
+}
+
+/* Placeholder for missing images */
+
+.collage-photo-placeholder {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    min-height: 130px;
+
+    aspect-ratio: 4 / 3;
+
+    background: #e2eeec;
+
+    color: var(--ocean-slate);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------
+   DECORATIVE PINS
+   ---------------------------------------------------------- */
+
+.collage-pin {
+    position: absolute;
+    z-index: 1;
+
+    top: -9px;
+    left: 50%;
+
+    width: 16px;
+    height: 16px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at 32% 28%,
+        #c7f6ee,
+        #249e9b 58%,
+        #136070
+    );
+
+    box-shadow:
+        1px 2px 3px rgba(0, 0, 0, .27);
+}
+
+/* ----------------------------------------------------------
+   HANDWRITTEN PHOTO NOTES
+   ---------------------------------------------------------- */
+
+.collage-handwriting {
+    display: block;
+
+    margin-top: 9px;
+
+    font-family: 'Caveat', cursive;
+
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.05;
+
+    color: var(--ocean-deep);
+
+    overflow-wrap: anywhere;
+}
+
+.collage-note-left {
+    text-align: left;
+}
+
+.collage-note-center {
+    text-align: center;
+}
+
+.collage-note-right {
+    text-align: right;
+}
+
+/* ----------------------------------------------------------
+   REGULAR TEXT BESIDE COLLAGE
+   ---------------------------------------------------------- */
+
+.collage-prose {
+    min-width: 0;
+}
+
+/* ----------------------------------------------------------
+   TABLET / SMALL SCREENS
+   ---------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+    .collage-layout.collage-has-text {
+        grid-template-columns: 1fr;
+    }
+
+    .collage-board {
+        padding: 35px 16px;
+    }
+
+    .collage-photo {
+        max-width: min(100%, 260px);
+    }
+}
+
+/* ----------------------------------------------------------
+   MOBILE
+   ---------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+    .collage-board {
+        gap: 26px 10px;
+        padding: 30px 12px;
+    }
+
+    .collage-photo {
+        width: var(--photo-width, 160px);
+        max-width: 100%;
+
+        padding: 8px 8px 12px;
+    }
+
+    .collage-handwriting {
+        font-size: 21px;
+    }
+}
+
+
+
 /* ==========================================
    HANDWRITTEN NOTE PAPER
    ========================================== */
@@ -984,13 +1197,11 @@ body:not([data-page="home"]) main {
 
     /* Faint ruled notebook paper */
     background-image:
-        repeating-linear-gradient(
-            to bottom,
+        repeating-linear-gradient(to bottom,
             transparent 0px,
             transparent 35px,
             rgba(89, 189, 183, 0.16) 36px,
-            transparent 37px
-        );
+            transparent 37px);
 
     border: 1px solid #DCE7E3;
     border-radius: 2px;
@@ -1031,12 +1242,10 @@ body:not([data-page="home"]) main {
     width: 14px;
 
     background:
-        radial-gradient(
-            circle,
+        radial-gradient(circle,
             #EAF5F4 0 4px,
             #D5DFDA 4.5px,
-            transparent 5.5px
-        ) center top / 14px 78px repeat-y;
+            transparent 5.5px) center top / 14px 78px repeat-y;
 
     pointer-events: none;
 }
