@@ -385,6 +385,103 @@
         }
 
 
+        else if (s.type === 'books') {
+          content = `
+            <div class="book-list">
+              ${(s.items || []).map(book => {
+
+                const epubPath = book.epub
+                  ? root + 'assets/epubs/' + encodeURIComponent(book.epub)
+                  : '';
+
+                return `
+                  <article class="book-card">
+
+                    <div class="book-header">
+                      <div class="book-heading">
+                        <h3>${escapeHTML(book.title || '')}</h3>
+                        <div class="book-author">
+                          by ${escapeHTML(book.author || '')}
+                        </div>
+                      </div>
+
+
+                    ${book.rating ? `
+                      <div class="book-rating">
+                        <span class="book-rating-badge">
+                          ${escapeHTML(book.rating)}
+                        </span>
+                      </div>
+                    ` : ''}
+
+                    </div>
+
+                    ${book.summary ? `
+                      <div class="book-summary">
+                        ${paragraphs(
+                          Array.isArray(book.summary)
+                            ? book.summary
+                            : [book.summary]
+                        )}
+                      </div>
+                    ` : ''}
+
+
+                    ${(book.warnings?.length || book.tags?.length) ? `
+                      <div class="book-tags">
+
+                        ${(book.warnings || []).map(warning => {
+                          const neutralWarnings = [
+                            'No Archive Warnings Apply',
+                            'Creator Chose Not To Use Archive Warnings'
+                          ];
+
+                          const isNeutral = neutralWarnings.some(
+                            item => item.toLowerCase() === warning.trim().toLowerCase()
+                          );
+
+                          return `
+                            <span class="book-tag ${isNeutral
+                              ? 'book-tag-warning-neutral'
+                              : 'book-tag-warning'}">
+                              ${escapeHTML(warning)}
+                            </span>
+                          `;
+                        }).join('')}
+
+                        ${(book.tags || []).map(tag => `
+                          <span class="book-tag">
+                            ${escapeHTML(tag)}
+                          </span>
+                        `).join('')}
+
+                      </div>
+                    ` : ''}
+
+
+                    ${book.words ? `
+                      <div class="book-wordcount">
+                        <span class="book-meta-label">Length</span>
+                        ${escapeHTML(String(book.words))} words
+                      </div>
+                    ` : ''}
+
+                    ${epubPath ? `
+                      <a class="book-download"
+                        href="${epubPath}"
+                        download>
+                        Download EPUB
+                        <span aria-hidden="true">↓</span>
+                      </a>
+                    ` : ''}
+
+                  </article>
+                `;
+              }).join('')}
+            </div>
+          `;
+        }
+
 
 
         return `

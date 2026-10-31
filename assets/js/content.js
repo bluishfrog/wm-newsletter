@@ -4,7 +4,7 @@ window.PAGE_CONTENT = {
 
   issue_001: {
 
-    eyebrow: 'Issue No. 001 | written by Blu',
+    eyebrow: 'Issue No. 001 / by Blu',
 
     title: 'The Art of Aching',
 
@@ -76,15 +76,79 @@ window.PAGE_CONTENT = {
         url: 'https://open.spotify.com/track/77MdvMx9L4ZQuLhhn3o21h'
       },
 
+      
+      
+
+
+      {
+        type: 'books',
+        eyebrow: '04 / Reading Recs',
+        title: 'Stories Worth Losing Sleep Over',
+
+        items: [
+
+          {
+            title: 'Olympic Time Loop Fic',
+            author: 'BluishFrog',
+
+            summary: [
+              'Your summary goes here.'
+            ],
+
+            rating: 'T',
+            words: '42,000',
+
+            warnings: [
+              'No Archive Warnings Apply'
+            ],
+
+            tags: [
+              'Time Loop',
+              'Hurt / Comfort',
+              'Slow Burn',
+              'Happy Ending'
+            ],
+
+            epub: 'olympic-time-loop.epub'
+          },
+
+
+          {
+            title: 'A Different Kind of Home',
+            author: 'ExampleAuthor',
+
+            summary: [
+              'Two people, one unexpected reunion, and a conversation that has been waiting years to happen.'
+            ],
+
+            tags: [
+              'Reunion',
+              'Angst',
+              'Found Family',
+              'Hurt / Comfort'
+            ],
+
+            words: '18,500',
+            rating: 'E',
+
+            warnings: [
+              'Grief',
+              'Past trauma'
+            ],
+
+            epub: 'a-different-kind-of-home.epub'
+          }
+        ]
+      },
 
       {
         type: 'excerpt',
-        eyebrow: '03 / From the WIP drawer',
-        title: 'Sneak Peak',
+        eyebrow: '05 / From the WIP drawer',
+        title: 'Things That Still Need to be Written',
 
         bookTitle: 'Olympic Time Loop Fic (Working Title)',
         author: 'BluishFrog',
-        source: 'Scene 5',
+        source: 'Scene 5, as of now',
 
         paragraphs: [
 
