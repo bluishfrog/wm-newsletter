@@ -305,8 +305,25 @@ window.PAGE_CONTENT = {
       },
 
       {
+        type: 'cards',
+        eyebrow: '05 / Statistics',
+        title: 'Pain But in Numbers',
+        items: [
+          {
+            title: 'First note',
+            text: 'amount of hurt comfort fics.'
+          },
+
+          {
+            title: 'Second note',
+            text: 'Amount of wins following a loss in this season so far.'
+          }
+        ]
+      },
+
+      {
         type: 'excerpt',
-        eyebrow: '05 / From the WIP drawer',
+        eyebrow: '06 / From the WIP drawer',
         title: 'Things That Still Need to be Written',
 
         bookTitle: 'Olympic Time Loop Fic (Working Title)',
@@ -330,33 +347,6 @@ window.PAGE_CONTENT = {
           'The paper has fewer lines, which makes it easier to sketch diagrams. Or the cover feels sturdier, so it’ll survive being shoved into a bag. Or the pages lie flatter. Or it’s the perfect size because it fits in his jacket pocket without being annoying. Or the color is less distracting. Or the color is more distracting, which is apparently better that time around.',
           'Every explanation is delivered with complete confidence, as though there could never have been any other choice.',
           'The situation still fucking sucks but, on the rare occasions he isn’t crushed by how powerless he feels, how utterly helpless, Mack delights in knowing that Will is still full of shit.)'
-        ]
-      },
-
-
-
-
-      { type: 'highlight', eyebrow: '02 / A little aside', title: 'Something worth keeping', paragraphs: ['A highlighted section gives a thought or announcement a little extra attention.'] },
-
-      {
-        type: 'cards',
-        eyebrow: '03 / Statistics',
-        title: 'Pain but in numbers',
-        items: [
-          {
-            title: 'First note',
-            text: 'amount of hurt comfort fics.'
-          },
-
-          {
-            title: 'Second note',
-            text: 'amount of losses and wins in this season so far.'
-          },
-
-          {
-            title: 'Third note',
-            text: 'A third little idea.'
-          }
         ]
       }
 
