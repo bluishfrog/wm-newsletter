@@ -465,6 +465,83 @@
         }
 
 
+
+        else if (s.type === 'diary') {
+          content = `
+
+            ${s.introduction ? `
+              <div class="diary-introduction">
+                ${paragraphs(
+                  Array.isArray(s.introduction)
+                    ? s.introduction
+                    : [s.introduction]
+                )}
+              </div>
+            ` : ''}
+
+            <div class="diary-wrap">
+
+              <div class="diary-magic" aria-hidden="true">
+                <span>✦</span>
+                <span>✧</span>
+                <span>✳</span>
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+                <span>✳</span>
+                <span>✧</span>
+              </div>
+
+              <div class="diary-journal">
+
+
+              <div class="diary-topline">
+                <span class="diary-category">
+                  ${escapeHTML(s.label || 'The Personal Journal')}
+                </span>
+                <span class="diary-symbol" aria-hidden="true">✦</span>
+              </div>
+
+              ${s.date ? `
+                <div class="diary-date">
+                  ${escapeHTML(s.date)}
+                </div>
+              ` : ''}
+
+              ${s.diaryTitle ? `
+                <h3 class="diary-title">
+                  ${formatText(s.diaryTitle)}
+                </h3>
+              ` : ''}
+
+              <div class="diary-entries">
+                ${(s.entries || []).map((entry, index) => `
+                  ${index > 0 ? `
+                    <div class="diary-divider" aria-hidden="true">
+                      <span>✧</span>
+                    </div>
+                  ` : ''}
+
+                  <div class="diary-entry">
+                    ${paragraphs(
+                      Array.isArray(entry) ? entry : [entry]
+                    )}
+                  </div>
+                `).join('')}
+              </div>
+
+              ${s.signature ? `
+                <div class="diary-signature">
+                  ${formatText(s.signature)}
+                </div>
+              ` : ''}
+
+            </div>
+          `;
+        }
+
+
+
         else if (s.type === 'books') {
           content = `
             <div class="book-list">

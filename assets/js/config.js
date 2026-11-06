@@ -12,6 +12,10 @@ window.SITE = {
     {
       label: 'Issue No. 001',
       href: 'pages/issue_001.html'
+    },
+    {
+      label: 'Issue No. 002',
+      href: 'pages/issue_002.html'
     }
   ]
 };
