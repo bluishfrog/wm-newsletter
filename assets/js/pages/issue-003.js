@@ -20,8 +20,25 @@ window.PAGE_CONTENT.issue_003 = {
       eyebrow: '01 / Opening Musings',
       title: '???',
       paragraphs: [
-        'The art of {{Hurt / Comfort}} is by no means a modern invention. Long before the first fanfiction was ever committed to the digital page, humanity had already developed a rather remarkable fondness for watching its beloved characters suffer.',
+        'Some text here',
+        
+        {
+          type: 'image',
+          style: 'standard',
+          src: 'assets/images/003_wm_blue.jpg',
+          alt: 'Test',
+          caption: 'Just a test'
+        },
 
+        {
+          type: 'image',
+          style: 'web',
+          src: 'assets/images/003_wm_blue.jpg',
+          alt: 'Test',
+          address: 'Just a test'
+        },
+
+        'here some next paragraph stuff'
 
       ]
     },

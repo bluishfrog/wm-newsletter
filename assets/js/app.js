@@ -264,10 +264,85 @@
     } else {
 
       // Render paragraphs
-      const paragraphs = arr =>
-        (arr || [])
-          .map(p => `<p>${formatText(p)}</p>`)
-          .join('');
+
+      const paragraphs = arr => {
+        const items = Array.isArray(arr)
+          ? arr
+          : arr == null
+            ? []
+            : [arr];
+
+        return items.map(item => {
+
+          // Ordinary text paragraph
+          if (typeof item === 'string') {
+            return `<p>${formatText(item)}</p>`;
+          }
+
+          // Image between paragraphs
+          if (item && item.type === 'image') {
+            const allowedStyles = ['standard', 'web'];
+
+            const style = allowedStyles.includes(item.style)
+              ? item.style
+              : 'standard';
+
+            // Only allow local image paths or HTTPS URLs
+            const src = String(item.src || '');
+
+            const imageSrc = src.startsWith('assets/')
+              ? root + src
+              : src;
+
+            if (
+              !src ||
+              !(
+                src.startsWith('assets/images/') ||
+                src.startsWith('https://')
+              )
+            ) {
+              return '';
+            }
+
+            return `
+              <figure class="article-image article-image-${style}">
+
+                ${style === 'web' ? `
+                  <div class="article-web-toolbar" aria-hidden="true">
+                    <div class="article-web-buttons">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+
+                    <div class="article-web-address">
+                      ${escapeHTML(item.address || 'x.com')}
+                    </div>
+
+                    <div class="article-web-menu">•••</div>
+                  </div>
+                ` : ''}
+
+                <img
+                  src="${escapeHTML(imageSrc)}"
+                  alt="${escapeHTML(item.alt || '')}"
+                  loading="lazy"
+                >
+
+                ${item.caption ? `
+                  <figcaption>
+                    ${formatText(item.caption)}
+                  </figcaption>
+                ` : ''}
+              </figure>
+            `;
+          }
+
+          return '';
+
+        }).join('');
+      };
+
 
       // Render reusable content sections
       const renderSection = s => {
